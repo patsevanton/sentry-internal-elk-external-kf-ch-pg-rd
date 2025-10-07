@@ -1,6 +1,6 @@
 # Ресурс для создания сети VPC в Yandex Cloud
 resource "yandex_vpc_network" "sentry" {
-  name      = "vpc"  # Имя сети VPC
+  name      = "vpc-new"  # Имя сети VPC
   folder_id = coalesce(local.folder_id, data.yandex_client_config.client.folder_id)  # ID папки, либо из локальной переменной, либо из конфигурации клиента Yandex Cloud
 }
 
